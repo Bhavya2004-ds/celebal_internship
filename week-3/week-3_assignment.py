@@ -23,7 +23,7 @@ sns.heatmap(diabetes_data.corr(numeric_only=True), annot=True, cmap='coolwarm')
 plt.title("Correlation Heatmap")
 plt.show()
 
-# ihstogram of each feature
+# histogram of each feature
 diabetes_data.hist(bins=20, figsize=(14, 10), edgecolor='black')
 plt.suptitle("Distribution of Features", fontsize=16)
 plt.show()
