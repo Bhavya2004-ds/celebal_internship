@@ -28,8 +28,8 @@ diabetes_data.hist(bins=20, figsize=(14, 10), edgecolor='black')
 plt.suptitle("Distribution of Features", fontsize=16)
 plt.show()
 
-# pairplot for selected columns (optional)
-selected_columns = diabetes_data.columns[:5]  # select first 5 columns for clarity
+# pairplot for selected columns
+selected_columns = diabetes_data.columns[:5] 
 sns.pairplot(diabetes_data[selected_columns])
 plt.suptitle("Pairplot of Selected Features", y=1.02)
 plt.show()
